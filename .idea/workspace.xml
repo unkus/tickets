@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4545b734-5b8a-4fc8-a6a9-565de4fa1566" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/initDB.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/populateDB.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/ticketseller/databse/tickets/TicketDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/ticketseller/databse/tickets/TicketEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/ticketseller/databse/tickets/TicketRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/ticketseller/databse/users/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/ticketseller/databse/users/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/ticketseller/databse/users/UserRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/resources/config/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/di/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/di/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/database/CrudRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/database/tickets/TicketRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/database/users/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/service/carriers/CarrierDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/service/pathes/Path.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/service/pathes/PathDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/service/tickets/Ticket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/service/tickets/TicketDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/service/tickets/TicketFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/service/tickets/TicketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/service/tickets/exceptions/TicketAlreadyPurchasedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/service/tickets/exceptions/TicketNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/service/users/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/service/users/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/service/users/exceptions/UserAlreadyRegisteredException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/service/users/exceptions/UserNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/ticketseller/service/tickets/TicketServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/ticketseller/service/users/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/ticketseller/web/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/ticketseller/web/TicketApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/ticketseller/web/exceptions/ApplicationExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/ticketseller/web/tickets/TicketController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/ticketseller/web/tickets/TicketDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/ticketseller/web/tickets/TicketFilterDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/ticketseller/web/tickets/TicketFilterInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/ticketseller/web/users/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/ticketseller/web/users/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/test/java/com/ticketseller/service/tickets/TicketControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/test/java/com/ticketseller/service/users/UserControllerTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/service">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/web">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/database">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/service/di">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tickets" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tickets" type="f1a62948:ProjectNode" />
+                <item name="web" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tickets" type="f1a62948:ProjectNode" />
+                <item name="web" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tickets" type="f1a62948:ProjectNode" />
+                <item name="web" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tickets" type="f1a62948:ProjectNode" />
+                <item name="web" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+        <option value="Record" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2TzKiQ2cpc5RwAm0o1aWGCoomcv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kirill/Проекты/idea/moviechecker&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.service.users" />
+      <recent name="com.example.service.tickets" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/src/main/resources" />
+      <recent name="$PROJECT_DIR$/web/src/test/java/com/example/tickets/web" />
+      <recent name="$PROJECT_DIR$/service/src/main/java/com/example/service" />
+      <recent name="$PROJECT_DIR$/postgres/src/main/java/com/example/database" />
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/database/src/main/resources/config" />
+      <recent name="$PROJECT_DIR$/database/src/main/resources" />
+      <recent name="$PROJECT_DIR$/postgres" />
+      <recent name="$PROJECT_DIR$/postgres/src/main/resources" />
+      <recent name="$PROJECT_DIR$/service" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.ticketseller.service.tickets" />
+      <recent name="com.ticketseller.service.pathes" />
+      <recent name="com.example.web.users" />
+      <recent name="com.example.service.users.exceptions" />
+      <recent name="com.example.service.tickets.exceptions" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.database.tickets" />
+      <recent name="com.example.service.tickets" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.tickets:web [bootRun]">
+    <configuration name="TicketControllerTest.getAvailableTicketsPage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":web:test" />
+            <option value="--tests" />
+            <option value="&quot;com.ticketseller.service.tickets.TicketControllerTest.getAvailableTicketsPage&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="tickets:database [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/database" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="tickets:service [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="tickets:web [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/web" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="tickets:web [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/web" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-image" temporary="true">
+      <deployment type="docker-image">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.tickets:web [bootRun]" />
+        <item itemvalue="Gradle.tickets:web [test]" />
+        <item itemvalue="Gradle.TicketControllerTest.getAvailableTicketsPage" />
+        <item itemvalue="Gradle.tickets:service [build]" />
+        <item itemvalue="Gradle.tickets:database [build]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4545b734-5b8a-4fc8-a6a9-565de4fa1566" name="Changes" comment="" />
+      <created>1692040595524</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692040595524</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web/src/main/java/com/ticketseller/web/exceptions/ApplicationExceptionHandler.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web/src/main/java/com/ticketseller/web/exceptions/ApplicationExceptionHandler.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web/src/main/java/com/ticketseller/web/exceptions/ApplicationExceptionHandler.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web/src/main/java/com/ticketseller/web/exceptions/ApplicationExceptionHandler.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web/src/main/java/com/ticketseller/web/users/UserController.java</url>
+          <line>167</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/service/src/main/java/com/ticketseller/service/tickets/TicketServiceImpl.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/database/src/main/java/com/ticketseller/databse/tickets/TicketDao.java</url>
+          <line>194</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/database/CrudRepository.java</url>
+          <line>10</line>
+          <properties class="com.ticketseller.database.CrudRepository" method="read">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="GradleRunConfiguration">
+        <watch expression="new BeanPropertySqlParameterSource(ticket).getParameterNames()" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/tickets$tickets__bootRun_.ic" NAME="tickets [bootRun] Coverage Results" MODIFIED="1693132357846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

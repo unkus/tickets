@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'io.spring.dependency-management' version '1.1.3'
+}
+
+group = 'com.ticketseller.service'
+version = '1.0-SNAPSHOT'
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(":service:di")
+    runtimeOnly project(":database")
+
+    implementation "org.springframework.boot:spring-boot-starter-validation:$springBootVersion"
+    // Pageable
+    implementation "org.springframework.data:spring-data-commons:$springBootVersion"
+}
+
+test {
+    useJUnitPlatform()
+}

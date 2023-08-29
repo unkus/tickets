@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ticketSales
+    username: ticketSeller
+    password: mypass
+    driver-class-name: org.postgresql.Driver
+    initialization-mode: ALWAYS
+  jpa:
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQL10Dialect

@@ -1,0 +1,6 @@
+rootProject.name = 'tickets'
+include 'service:di'
+include 'database'
+include 'service'
+include 'web'
+

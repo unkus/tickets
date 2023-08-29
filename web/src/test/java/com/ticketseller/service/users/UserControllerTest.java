@@ -1,6 +1,7 @@
 package com.ticketseller.service.users;
 
 import com.ticketseller.service.tickets.TicketDetails;
+import com.ticketseller.web.MainConfig;
 import com.ticketseller.web.exceptions.ApplicationExceptionHandler;
 import com.ticketseller.web.users.UserController;
 import com.ticketseller.web.users.UserDto;
@@ -27,6 +28,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @WebMvcTest
 @ContextConfiguration(classes = {
+        MainConfig.class,
         UserController.class,
         ApplicationExceptionHandler.class
 })

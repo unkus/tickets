@@ -1,5 +1,6 @@
 package com.ticketseller.service.tickets;
 
+import com.ticketseller.web.MainConfig;
 import com.ticketseller.web.tickets.TicketController;
 import com.ticketseller.web.tickets.TicketFilterDto;
 import org.junit.jupiter.api.Test;
@@ -24,6 +25,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @WebMvcTest
 @ContextConfiguration(classes = {
+        MainConfig.class,
         TicketController.class
 })
 public class TicketControllerTest {

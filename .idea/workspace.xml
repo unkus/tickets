@@ -7,70 +7,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4545b734-5b8a-4fc8-a6a9-565de4fa1566" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/initDB.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/populateDB.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/ticketseller/databse/tickets/TicketDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/ticketseller/databse/tickets/TicketEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/ticketseller/databse/tickets/TicketRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/ticketseller/databse/users/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/ticketseller/databse/users/UserEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/ticketseller/databse/users/UserRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/src/main/resources/config/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/di/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/di/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/database/CrudRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/database/tickets/TicketRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/database/users/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/service/carriers/CarrierDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/service/pathes/Path.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/service/pathes/PathDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/service/tickets/Ticket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/service/tickets/TicketDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/service/tickets/TicketFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/service/tickets/TicketService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/service/tickets/exceptions/TicketAlreadyPurchasedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/service/tickets/exceptions/TicketNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/service/users/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/service/users/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/service/users/exceptions/UserAlreadyRegisteredException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/service/users/exceptions/UserNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/ticketseller/service/tickets/TicketServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/ticketseller/service/users/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/ticketseller/web/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/ticketseller/web/TicketApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/ticketseller/web/exceptions/ApplicationExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/ticketseller/web/tickets/TicketController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/ticketseller/web/tickets/TicketDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/ticketseller/web/tickets/TicketFilterDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/ticketseller/web/tickets/TicketFilterInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/ticketseller/web/users/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/ticketseller/web/users/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/test/java/com/ticketseller/service/tickets/TicketControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/test/java/com/ticketseller/service/users/UserControllerTest.java" afterDir="false" />
+    <list default="true" id="4545b734-5b8a-4fc8-a6a9-565de4fa1566" name="Changes" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/ticketseller/web/MainConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/web/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/ticketseller/web/TicketApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/ticketseller/web/TicketApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/test/java/com/ticketseller/service/tickets/TicketControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/test/java/com/ticketseller/service/tickets/TicketControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/test/java/com/ticketseller/service/users/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/test/java/com/ticketseller/service/users/UserControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,6 +74,13 @@
                 <item name="tickets" type="f1a62948:ProjectNode" />
                 <item name="web" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tickets" type="f1a62948:ProjectNode" />
+                <item name="web" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="verification" type="c8890929:TasksNode$1" />
               </path>
             </expand>
@@ -142,9 +93,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -190,11 +141,11 @@
       <recent name="$PROJECT_DIR$/src/test/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web" />
       <recent name="$PROJECT_DIR$/database/src/main/resources/config" />
       <recent name="$PROJECT_DIR$/database/src/main/resources" />
       <recent name="$PROJECT_DIR$/postgres" />
       <recent name="$PROJECT_DIR$/postgres/src/main/resources" />
-      <recent name="$PROJECT_DIR$/service" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="com.ticketseller.service.tickets" />
@@ -212,7 +163,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.tickets:web [bootRun]">
+  <component name="RunManager" selected="Gradle.tickets:web [build]">
     <configuration name="TicketControllerTest.getAvailableTicketsPage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -235,28 +186,6 @@
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <ForceTestExec>true</ForceTestExec>
-      <method v="2" />
-    </configuration>
-    <configuration name="tickets:database [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/database" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
     <configuration name="tickets:service [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -303,6 +232,28 @@
       <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
+    <configuration name="tickets:web [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/web" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
     <configuration name="tickets:web [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -339,11 +290,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.tickets:web [bootRun]" />
+        <item itemvalue="Gradle.tickets:web [build]" />
         <item itemvalue="Gradle.tickets:web [test]" />
+        <item itemvalue="Gradle.tickets:web [bootRun]" />
         <item itemvalue="Gradle.TicketControllerTest.getAvailableTicketsPage" />
         <item itemvalue="Gradle.tickets:service [build]" />
-        <item itemvalue="Gradle.tickets:database [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -356,7 +307,49 @@
       <option name="presentableId" value="Default" />
       <updated>1692040595524</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1693269514892</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693269514892</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial commit">
+      <created>1693270012969</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693270012969</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -382,11 +375,6 @@
           <option name="timeStamp" value="65" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/web/src/main/java/com/ticketseller/web/users/UserController.java</url>
-          <line>167</line>
-          <option name="timeStamp" value="68" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/service/src/main/java/com/ticketseller/service/tickets/TicketServiceImpl.java</url>
           <line>45</line>
           <option name="timeStamp" value="69" />
@@ -395,6 +383,11 @@
           <url>file://$PROJECT_DIR$/database/src/main/java/com/ticketseller/databse/tickets/TicketDao.java</url>
           <line>194</line>
           <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web/src/main/java/com/ticketseller/web/users/UserController.java</url>
+          <line>167</line>
+          <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/service/di/src/main/java/com/ticketseller/database/CrudRepository.java</url>

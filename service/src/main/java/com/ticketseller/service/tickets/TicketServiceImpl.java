@@ -39,14 +39,7 @@ public class TicketServiceImpl implements TicketService {
     @Override
     public void purchaseTicket(String login, long ticketId)
             throws UserNotFoundException, TicketNotFoundException, TicketAlreadyPurchasedException {
-        // TODO: use transaction
-        User user = userRepository.findByLogin(login).orElseThrow(() -> new UserNotFoundException(login));
-        Ticket ticket = ticketRepository.findById(ticketId).orElseThrow(() -> new TicketNotFoundException(ticketId));
-        if (ticket.getOwnerId() > 0) {
-            throw new TicketAlreadyPurchasedException(ticketId);
-        }
-        ticket.setOwnerId(user.id());
-        ticketRepository.update(ticket);
+        ticketRepository.purchaseTicket(login, ticketId);
     }
 
     @Override

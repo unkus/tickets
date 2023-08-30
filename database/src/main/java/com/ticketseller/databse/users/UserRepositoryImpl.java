@@ -5,6 +5,8 @@ import com.ticketseller.database.users.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.support.TransactionTemplate;
 
 import java.util.Optional;
 
@@ -13,10 +15,17 @@ import java.util.Optional;
 public class UserRepositoryImpl implements UserRepository {
 
     private final UserDao userDao;
+    private final TransactionTemplate transactionTemplate;
 
     @Autowired
-    public UserRepositoryImpl(UserDao userDao) {
+    public UserRepositoryImpl(UserDao userDao, TransactionTemplate transactionTemplate) {
         this.userDao = userDao;
+        this.transactionTemplate = transactionTemplate;
+    }
+
+    @Override
+    public void create(User user) {
+        // Stub to future functional
     }
 
     @Override
@@ -26,17 +35,7 @@ public class UserRepositoryImpl implements UserRepository {
 
     @Override
     public Optional<User> findByLogin(String login)  {
-        return Optional.ofNullable(userDao.findByLogin(login));
-    }
-
-    @Override
-    public void create(User user) {
-        userDao.create(user);
-    }
-
-    @Override
-    public UserEntity read(Long id) {
-        return null;
+        return userDao.findByLogin(login);
     }
 
     @Override

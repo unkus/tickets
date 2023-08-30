@@ -5,13 +5,20 @@ import com.ticketseller.service.tickets.Ticket;
 import com.ticketseller.service.tickets.TicketDetails;
 import com.ticketseller.service.tickets.TicketFilter;
 import com.ticketseller.database.tickets.TicketRepository;
+import com.ticketseller.service.tickets.exceptions.TicketAlreadyPurchasedException;
+import com.ticketseller.service.tickets.exceptions.TicketNotFoundException;
 import com.ticketseller.service.users.User;
+import com.ticketseller.service.users.exceptions.UserNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.TransactionDefinition;
+import org.springframework.transaction.TransactionStatus;
+import org.springframework.transaction.support.DefaultTransactionDefinition;
 
 import java.util.Optional;
 
@@ -21,16 +28,18 @@ public class TicketRepositoryImpl implements TicketRepository {
 
     private final TicketDao ticketDao;
     private final UserDao userDao;
+    private final PlatformTransactionManager transactionManager;
 
     @Autowired
-    public TicketRepositoryImpl(TicketDao ticketDao, UserDao userDao) {
+    public TicketRepositoryImpl(TicketDao ticketDao, UserDao userDao, PlatformTransactionManager transactionManager) {
         this.ticketDao = ticketDao;
         this.userDao = userDao;
+        this.transactionManager = transactionManager;
     }
 
     @Override
-    public Optional<Ticket> findById(Long id) {
-        return Optional.ofNullable(ticketDao.findById(id));
+    public Optional<? extends Ticket> findById(Long id) {
+        return ticketDao.findById(id);
     }
 
     @Override
@@ -56,17 +65,12 @@ public class TicketRepositoryImpl implements TicketRepository {
     }
 
     public Optional<TicketEntity> findById(long id) {
-        return Optional.ofNullable(ticketDao.findById(id));
+        return ticketDao.findById(id);
     }
 
     @Override
     public void create(Ticket user) {
         // Not yet implemented. No requirements to do it.
-    }
-
-    @Override
-    public TicketEntity read(Long id) {
-        return ticketDao.findById(id);
     }
 
     @Override
@@ -77,5 +81,28 @@ public class TicketRepositoryImpl implements TicketRepository {
     @Override
     public void delete(Ticket ticket) {
         // Not yet implemented. No requirements to do it.
+    }
+
+    @Override
+    public void purchaseTicket(String login, long ticketId)
+            throws UserNotFoundException, TicketNotFoundException, TicketAlreadyPurchasedException {
+        DefaultTransactionDefinition def = new DefaultTransactionDefinition();
+        def.setName("Purchase ticket");
+        def.setPropagationBehavior(TransactionDefinition.PROPAGATION_REQUIRED);
+
+        TransactionStatus status = transactionManager.getTransaction(def);
+        try {
+            User user = userDao.findByLogin(login).orElseThrow(() -> new UserNotFoundException(login));
+            Ticket ticket = ticketDao.findById(ticketId).orElseThrow(() -> new TicketNotFoundException(ticketId));
+            if (ticket.getOwnerId() > 0) {
+                throw new TicketAlreadyPurchasedException(ticketId);
+            }
+            ticket.setOwnerId(user.id());
+            ticketDao.update(ticket);
+        } catch (UserNotFoundException | TicketNotFoundException | TicketAlreadyPurchasedException ex) {
+            transactionManager.rollback(status);
+            throw ex;
+        }
+        transactionManager.commit(status);
     }
 }

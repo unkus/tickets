@@ -12,6 +12,8 @@ import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
 import org.springframework.stereotype.Component;
 
+import java.util.Optional;
+
 @Component
 public class UserDao {
 
@@ -49,15 +51,15 @@ public class UserDao {
         }
     }
 
-    public User findByLogin(String login) {
+    public Optional<User> findByLogin(String login) {
         try {
-            return namedParameterJdbcTemplate.queryForObject(
+            return Optional.ofNullable(namedParameterJdbcTemplate.queryForObject(
                     "SELECT * FROM account WHERE login = :login",
                     new MapSqlParameterSource().addValue("login", login),
-                    userRowMapper
+                    userRowMapper)
             );
         } catch (EmptyResultDataAccessException ex) {
-            return null;
+            return Optional.empty();
         }
     }
 

@@ -4,11 +4,9 @@ import java.util.Optional;
 
 public interface CrudRepository<T, K> {
 
-    Optional<T> findById(K id);
-
     void create(T user);
 
-    T read(K id);
+    Optional<? extends T> findById(K id);
 
     void update(T object);
 

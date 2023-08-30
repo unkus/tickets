@@ -18,6 +18,7 @@ import org.springframework.stereotype.Component;
 
 import java.sql.Timestamp;
 import java.util.List;
+import java.util.Optional;
 
 @Component
 class TicketDao {
@@ -78,12 +79,12 @@ class TicketDao {
         this.namedParameterJdbcTemplate = namedParameterJdbcTemplate;
     }
 
-    public TicketEntity findById(long id) {
+    public Optional<TicketEntity> findById(long id) {
         try {
-            return namedParameterJdbcTemplate.queryForObject("SELECT * FROM ticket WHERE id = :id",
+            return Optional.ofNullable(namedParameterJdbcTemplate.queryForObject("SELECT * FROM ticket WHERE id = :id",
                     new MapSqlParameterSource().addValue("id", id),
                     ticketRowMapper
-            );
+            ));
         } catch (EmptyResultDataAccessException ex) {
             return null;
         }
